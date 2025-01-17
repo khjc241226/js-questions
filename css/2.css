@@ -1,0 +1,26 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container { 
+  width: 150px;  
+  height: 200px;
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.number{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;    /* 커서 손가락 */
+  user-select: none; /* 블럭 막기 */
+}
+
+.number:hover {background-color: skyblue;}
+.number:active {background-color: orangered;}

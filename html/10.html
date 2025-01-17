@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>이미지 선택하기</title>
+  <link rel="stylesheet" href="../css/10.css">
+</head>
+<body>
+  <h1>라디오 버튼 클릭 시 해당 이미지가 화면에 출력되도록 하기</h1>
+  <pre>
+    * 랜덤 이미지 제공 url (제일 뒤에 random 숫자를 다르게하면 이지미가 달라짐)
+    https://picsum.photos/400/300?random=1
+  </pre>
+  <div class="container">
+    <div class="radio-group">
+      <label for="img1">이미지1</label>
+      <input type="radio" name="images" id="img1" checked>
+      <label for="img2">이미지2</label>
+      <input type="radio" name="images" id="img2">
+      <label for="img3">이미지3</label>
+      <input type="radio" name="images" id="img3">
+      <label for="img4">이미지4</label>
+      <input type="radio" name="images" id="img4">
+      <label for="img5">이미지5</label>
+      <input type="radio" name="images" id="img5">
+    </div>
+    
+    <div class="image-container">
+      <img src="https://picsum.photos/400/300?random=1" alt="Image 1" class="active">
+      <img src="https://picsum.photos/400/300?random=2" alt="Image 2">
+      <img src="https://picsum.photos/400/300?random=3" alt="Image 3">
+      <img src="https://picsum.photos/400/300?random=4" alt="Image 4">
+      <img src="https://picsum.photos/400/300?random=5" alt="Image 5">
+    </div>
+  </div>
+  <script src="../js/10.js"></script>
+</body>
+</html>

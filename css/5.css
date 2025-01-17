@@ -1,0 +1,129 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+
+#display{
+  height: 50px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.keypad{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  border-top : 2px solid #ddd;
+}
+
+.key{
+  width: 33.33%;
+  height: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+  transition-duration: 0.2s;
+}
+
+.key:hover{
+  background-color: #ddd;
+}
+
+.key:active{
+  transform: scale(1.1);
+}
+
+
+.container > button{
+  margin: 5px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#addBtn{
+  color : green;
+  border: 2px solid green;
+}
+
+#addBtn:hover{
+  color:white;
+  background-color: green;
+}
+
+#resetBtn{
+  color : gray;
+  border: 2px solid gray;
+}
+
+#resetBtn:hover{
+  color:white;
+  background-color: gray;
+}
+
+
+
+
+.number-list{
+  width: 250px;
+  list-style: none;
+  border-left: 2px solid #ddd;
+  padding-left: 20px;
+  font-size: 20px;
+}
+
+.number-list li{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.number-list li>span:first-child{
+  width: 150px;
+}
+
+
+.number-list li>span:not(:first-child){
+  cursor: pointer;
+  user-select: none;
+}
+
+.number-list li>span:not(:first-child):hover{
+  font-weight: bold;
+}
+
+.favorites > span:first-child{
+  color : red;
+}
+
+.favorites > span:nth-child(2){
+  color: orange;
+}
+
+
+

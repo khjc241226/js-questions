@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>숫자 야구 게임</title>
+    <link rel="stylesheet" href="../css/9.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚾ 숫자 야구 게임 ⚾</h1>
+        <p class="rules">
+            서로 다른 4자리 숫자를 맞춰보세요!<br>
+            🎯 Strike: 숫자와 위치가 모두 맞을 때<br>
+            👀 Ball: 숫자는 맞지만 위치가 다를 때
+        </p>
+        <div class="input-container">
+            <input type="text" class="digit-input" maxlength="1" pattern="[0-9]">
+            <input type="text" class="digit-input" maxlength="1" pattern="[0-9]">
+            <input type="text" class="digit-input" maxlength="1" pattern="[0-9]">
+            <input type="text" class="digit-input" maxlength="1" pattern="[0-9]">
+        </div>
+        <button id="checkButton">확인</button>
+        <button id="restartButton" class="restart">새 게임</button>
+        <div id="message"></div>
+        <div id="history"></div>
+    </div>
+    <script src="../js/9.js"></script>
+</body>
+</html>
